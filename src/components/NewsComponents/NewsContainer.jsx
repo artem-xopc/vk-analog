@@ -9,12 +9,11 @@ const NewsContainer = () => {
   const count = 1;
   const limit = 12;
 
-  const setNewsInfo = async () => {
-    const response = await NewsService.getAllNews(count, limit);
-    setNews(response.data);
-  };
-
-  React.useMemo(() => {
+  React.useEffect(() => {
+    const setNewsInfo = async () => {
+      const response = await NewsService.getAllNews(count, limit);
+      setNews(response.data);
+    };
     setNewsInfo();
   }, {});
 

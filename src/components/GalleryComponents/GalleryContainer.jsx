@@ -7,12 +7,11 @@ import GalleryItem from "./GalleryItem";
 const GalleryContainer = () => {
   const [photos, setPhotos] = React.useState([]);
 
-  const setPhotosInfo = async () => {
-    const response = await GalleryService.getAllPhotos();
-    setPhotos(response.data);
-  };
-
-  React.useMemo(() => {
+  React.useEffect(() => {
+    const setPhotosInfo = async () => {
+      const response = await GalleryService.getAllPhotos();
+      setPhotos(response.data);
+    };
     setPhotosInfo();
   }, {});
 
