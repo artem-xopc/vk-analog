@@ -5,8 +5,7 @@ import Cookies from "js-cookie";
 const loginRequest = async (email, password) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      if (email === "test@gmail.com" && password === "123") {
-        console.log("Вы в системе!");
+      if (email === "candidate@test.com" && password === "Sj3jtod@!3") {
         resolve({ token: "abcd1234" });
       } else {
         reject(new Error("Неправильно указана электронная почта или пароль"));
@@ -30,18 +29,7 @@ export const login = createAsyncThunk(
   }
 );
 
-export const logout = createAsyncThunk("auth/logout", async () => {
-  // Здесь можно выполнять запрос на сервер для разлогинивания пользователя
-});
-
-// export const logoutRequest = async () => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       console.log("Вы не в системе");
-//       resolve({ token: "" });
-//     }, 1000);
-//   });
-// };
+export const logout = createAsyncThunk("auth/logout", async () => {});
 
 export const authSlice = createSlice({
   name: "auth",

@@ -4,8 +4,8 @@ import { privateRoutes, publicRoutes } from "./main";
 import { AuthContext } from "../contex";
 
 const AppRouter = () => {
-  const {isAuth, isLoading} = React.useContext(AuthContext);
-  
+  const {isAuth} = React.useContext(AuthContext);
+
   return (
     <div>
         {isAuth ? (
