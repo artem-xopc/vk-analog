@@ -1,10 +1,10 @@
 const NewsItem = ({ title, body }) => {
   return (
     <div>
-      <p>{title}</p>
-      <p style={{borderBottom: '1px solid black'}}>{body}</p>
+      <h4 style={{color: 'black'}}>{title}</h4>
+      <p style={{color: 'black'}}>{body}</p>
     </div>
   );
 };
 
-export default NewsItem;
+export default NewsItem; 
