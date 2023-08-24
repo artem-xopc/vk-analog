@@ -5,10 +5,12 @@ import GalleryService from "../../API/GalleryService";
 import GalleryItem from "./GalleryItem";
 import axios from "axios";
 
+import g from "./Gallery.module.css";
+
 const GalleryContainer = () => {
   const [photos, setPhotos] = React.useState([]);
   const [page, setPage] = React.useState(1);
-  const [limit, setLimit] = React.useState(10)
+  const [limit, setLimit] = React.useState(10);
   const [isPhotoLoading, setIsPhotoLoading] = React.useState(false);
 
   // Загрузка фотографий с сервера при изменении страницы и монтировании компонента
@@ -40,25 +42,32 @@ const GalleryContainer = () => {
   };
 
   return (
-    <div>
+    <div className={g.gallery_wrapper}>
+      <h1 className={g.title}>Галерея фотографий</h1>
       <div>
-        {photos.map((item) => (
-          <GalleryItem
-            key={item.id}
-            albumId={item.albumId}
-            id={item.id}
-            title={item.title}
-            url={item.url}
-          />
-        ))}
+        <div className={g.gallery_items}>
+          {photos.map((item) => (
+            <GalleryItem
+              key={item.id}
+              albumId={item.albumId}
+              id={item.id}
+              title={item.title}
+              url={item.url}
+            />
+          ))}
+        </div>
+      </div>
+      <div className={g.change_button}>
         <Button onClick={changePage}>Показать ещё</Button>
       </div>
-      <Link to={"/profile"}>
-        <Button>В профиль</Button>
-      </Link>
-      <Link to={"/news"}>
-        <Button>Посмотреть новости</Button>
-      </Link>
+      <div className={g.links_button_wrapper}>
+        <Link to={"/profile"}>
+          <Button className={g.link_button}>Перейти в профиль</Button>
+        </Link>
+        <Link to={"/news"}>
+          <Button>Посмотреть новости</Button>
+        </Link>
+      </div>
     </div>
   );
 };

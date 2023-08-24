@@ -5,6 +5,8 @@ import { Button } from "antd";
 import { Link } from "react-router-dom";
 import UserModal from "./ModalUpdateUserInfo";
 
+import p from "./Profile.module.css";
+
 const ProfileContainer = () => {
   const [user, setUser] = React.useState({});
   const [modalVisible, setModalVisible] = React.useState(false);
@@ -34,7 +36,7 @@ const ProfileContainer = () => {
   };
 
   return (
-    <div>
+    <div className={p.card_wrapper}>
       <ProfileItem
         name={user.name}
         username={user.username}
@@ -46,12 +48,14 @@ const ProfileContainer = () => {
         onSave={handleSaveProfile}
         onCancel={() => setModalVisible(false)}
       />
-      <Link to={"/news"}>
-        <Button>Новости</Button>
-      </Link>
-      <Link to={"/gallery"}>
-        <Button>Галерея</Button>
-      </Link>
+      <div>
+        <Link to={"/news"}>
+          <Button>Новости</Button>
+        </Link>
+        <Link to={"/gallery"}>
+          <Button>Галерея</Button>
+        </Link>
+      </div>
     </div>
   );
 };
