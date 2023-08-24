@@ -1,19 +1,14 @@
 import React from "react";
-import NewsService from "../../API/NewsService";
 import NewsItem from "./NewsItem";
 import { Button, List, Select } from "antd";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { Option } from "antd/es/mentions";
-import { useObserver } from "../../hooks/useObserver";
-import Pagination from "../UI/Pagination/Pagination";
-import { useFetching } from "../../hooks/useFetching";
 
 const NewsContainer = () => {
   const [users, setUsers] = React.useState([]);
   const [posts, setPosts] = React.useState([]);
-  const [isPostLoading, setIsPostLoading] = React.useState(false);
   const [authorFilter, setAuthorFilter] = React.useState(1);
+  const [isPostLoading, setIsPostLoading] = React.useState(false);
   const [currentUser, setCurrentUser] = React.useState(1);
   const [totalUsers, setTotalUsers] = React.useState(10);
   const [limit, setLimit] = React.useState(12);
@@ -44,7 +39,7 @@ const NewsContainer = () => {
           {
             params: {
               userId: authorFilter,
-              _limit: 10,
+              _limit: 12,
             },
           }
         );
@@ -106,21 +101,3 @@ const NewsContainer = () => {
 };
 
 export default NewsContainer;
-
-
-
-
-  // const [fetchPosts, isPostLoading, postError] = useFetching(
-  //   async () => {
-  //     try {
-  //       const response = await NewsService.getAllNews(authorFilter, limit);
-  //       setPosts([...posts, ...response.data]);
-  //     } catch (error) {
-  //       console.log("Ошибка при загрузке постов:", error);
-  //     }
-  //   }
-  // )
-
-  // React.useEffect(() => {
-  //   fetchPosts(limit, page);
-  // }, [page, limit]);

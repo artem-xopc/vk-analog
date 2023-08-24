@@ -1,10 +1,7 @@
-const GalleryItem = ({ albumId, id, title, url }) => {
+const GalleryItem = ({ id, title, url }) => {
   return (
     <div>
-      <p>
-        Номер альбома: {albumId}, номер фотографии: {id}
-      </p>
-      <p>Название фотографии: {title}</p>
+      <h4>Заголовок: {title}</h4>
       <img src={url} />
     </div>
   );
