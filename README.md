@@ -1,18 +1,13 @@
 # Проект: `VK_A` 
+### Скачивание репозитория: 
+#### `git clone https://github.com/artem-xopc/vk-analog.git`
 ### Установка всех необходимых компонентов: 
 #### `npm install`
 ### Запуск тестового сервера:
 #### `npm start`
 ### Почта и пароль для входа в систему:
 #### `candidate@test.com`, `Sj3jtod@!3`
-### Ссылка на GitHub Pages с рабочим проектом: [VK_A](https://artem-xopc.github.io/vk-analog/)
 
-## 
-### 
-
-#### 
-#####
-######
 
 
 <!-- # Getting Started with Create React App
