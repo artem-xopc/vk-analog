@@ -102,12 +102,12 @@ const NewsContainer = () => {
       </div>
       <div className={n.links_wrapper}>
         <div className={n.link_item}>
-          <Link to={"/profile"}>
+          <Link to={"/vk-analog/profile"}>
             <Button>В профиль</Button>
           </Link>
         </div>
         <div className={n.link_item}>
-          <Link to={"/gallery"}>
+          <Link to={"/vk-analog/gallery"}>
             <Button>В галерею</Button>
           </Link>
         </div>

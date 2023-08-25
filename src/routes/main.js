@@ -5,12 +5,12 @@ import Login from "../pages/Login";
 import Gallery from "../pages/Gallery";
 
 export const publicRoutes = [
-  { path: "/", element: Login },
+  { path: "/vk-analog/login", element: Login },
 ];
 
 export const privateRoutes = [
-  { path: "/", element: Login },
-  { path: "/profile", element: Profile },
-  { path: "/news", element: News },
-  { path: "/gallery", element: Gallery },
+  { path: "/vk-analog/login", element: Login },
+  { path: "/vk-analog/profile", element: Profile },
+  { path: "/vk-analog/news", element: News },
+  { path: "/vk-analog/gallery", element: Gallery },
 ]

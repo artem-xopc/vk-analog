@@ -28,7 +28,7 @@ const LoginContainer = () => {
                 <Button onClick={handleLogout}>Выйти</Button>
               </span>
               <span>
-                <Link to={"/profile"}>
+                <Link to={"/vk-analog/profile"}>
                   <Button>Посмотреть профиль</Button>
                 </Link>
               </span>

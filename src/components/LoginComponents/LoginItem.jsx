@@ -21,16 +21,12 @@ const LoginItem = ({ loading, error }) => {
       });
   };
 
-  // if (loading) {
-  //   return <Loader />;
-  // }
-
   if (error) {
     return (
       <div className={l.box}>
         <div className={l.login_card}>
           <p className={l.error}>{error}</p>
-          <a href="/login">
+          <a href="/vk-analog/login">
             <Button danger>Попробовать снова</Button>
           </a>
         </div>

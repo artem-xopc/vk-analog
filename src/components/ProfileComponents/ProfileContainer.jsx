@@ -56,12 +56,12 @@ const ProfileContainer = () => {
         />
         <div className={p.links_wrapper}>
           <span className={p.link_button}>
-            <Link to={"/news"}>
+            <Link to={"/vk-analog/news"}>
               <Button>Новости</Button>
             </Link>
           </span>
           <span className={p.link_button}>
-            <Link to={"/gallery"}>
+            <Link to={"/vk-analog/gallery"}>
               <Button>Галерея</Button>
             </Link>
           </span>

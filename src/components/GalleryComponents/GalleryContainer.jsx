@@ -61,10 +61,10 @@ const GalleryContainer = () => {
         <Button onClick={changePage}>Показать ещё</Button>
       </div>
       <div className={g.links_button_wrapper}>
-        <Link to={"/profile"}>
+        <Link to={"/vk-analog/profile"}>
           <Button className={g.link_button}>В профиль</Button>
         </Link>
-        <Link to={"/news"}>
+        <Link to={"/vk-analog/news"}>
           <Button>Новости</Button>
         </Link>
       </div>
