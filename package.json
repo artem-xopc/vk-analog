@@ -2,7 +2,7 @@
   "name": "vk-analog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://artem-xopc.github.io/vk-analog/login",
+  "homepage": "https://artem-xopc.github.io/vk-analog/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.17.0",
