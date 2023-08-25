@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/vk-analog/static/css/main.0efd00f0.css",
-    "main.js": "/vk-analog/static/js/main.f426fce5.js",
+    "main.js": "/vk-analog/static/js/main.b1cec2dc.js",
     "static/js/787.c5de492a.chunk.js": "/vk-analog/static/js/787.c5de492a.chunk.js",
     "index.html": "/vk-analog/index.html",
     "main.0efd00f0.css.map": "/vk-analog/static/css/main.0efd00f0.css.map",
-    "main.f426fce5.js.map": "/vk-analog/static/js/main.f426fce5.js.map",
+    "main.b1cec2dc.js.map": "/vk-analog/static/js/main.b1cec2dc.js.map",
     "787.c5de492a.chunk.js.map": "/vk-analog/static/js/787.c5de492a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0efd00f0.css",
-    "static/js/main.f426fce5.js"
+    "static/js/main.b1cec2dc.js"
   ]
 }
