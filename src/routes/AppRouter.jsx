@@ -11,7 +11,7 @@ const AppRouter = () => {
         {isAuth ? (
         <Routes>
           {privateRoutes.map(route => <Route path={route.path} element={<route.element />} key={route.path} />)}
-          <Route path="/*" element={<Navigate to="/profile" replace />} />
+          {/* <Route path="/*" element={<Navigate to="/profile" replace />} /> */}
         </Routes>
       ) : (
         <Routes>

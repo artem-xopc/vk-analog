@@ -5,6 +5,7 @@ import LoginItem from "./LoginItem";
 import { Button } from "antd";
 
 import l from "./Login.module.css";
+import { Link } from "react-router-dom";
 
 const LoginContainer = () => {
   const dispatch = useDispatch();
@@ -27,9 +28,9 @@ const LoginContainer = () => {
                 <Button onClick={handleLogout}>Выйти</Button>
               </span>
               <span>
-                <a href="/profile">
+                <Link to={"/profile"}>
                   <Button>Посмотреть профиль</Button>
-                </a>
+                </Link>
               </span>
             </span>
           </div>

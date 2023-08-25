@@ -9,6 +9,7 @@ export const publicRoutes = [
 ];
 
 export const privateRoutes = [
+  { path: "/login", element: Login },
   { path: "/profile", element: Profile },
   { path: "/news", element: News },
   { path: "/gallery", element: Gallery },
