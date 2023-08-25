@@ -5,11 +5,11 @@ import Login from "../pages/Login";
 import Gallery from "../pages/Gallery";
 
 export const publicRoutes = [
-  { path: "/login", element: Login },
+  { path: "/", element: Login },
 ];
 
 export const privateRoutes = [
-  { path: "/login", element: Login },
+  { path: "/", element: Login },
   { path: "/profile", element: Profile },
   { path: "/news", element: News },
   { path: "/gallery", element: Gallery },
