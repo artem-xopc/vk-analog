@@ -21,16 +21,16 @@ const NavBar = () => {
   return (
     <Header className={n.header_wrapper}>
       <div className={n.links_wrapper}>
-        <Link to={"/vk-analog/login"} className={n.link_item}>
+        <Link to="/login" className={n.link_item}>
           Авторизоваться
         </Link>
-        <Link to={"/vk-analog/profile"} className={n.link_item}>
+        <Link to="/profile" className={n.link_item}>
           Профиль
         </Link>
-        <Link to={"/vk-analog/news"} className={n.link_item}>
+        <Link to="/news" className={n.link_item}>
           Новости
         </Link>
-        <Link to={"/vk-analog/gallery"} className={n.link_item}>
+        <Link to="/gallery" className={n.link_item}>
           Галерея
         </Link>
         {isAuth ? (
@@ -42,7 +42,7 @@ const NavBar = () => {
             Выйти
           </Button>
         ) : (
-          <Link to={'/login'}>
+          <Link to='/login'>
             <Button type="primary" className={n.log_button}>
               Войти
             </Button>

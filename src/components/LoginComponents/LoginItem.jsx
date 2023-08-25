@@ -26,7 +26,7 @@ const LoginItem = ({ loading, error }) => {
       <div className={l.box}>
         <div className={l.login_card}>
           <p className={l.error}>{error}</p>
-          <a href="/vk-analog/login">
+          <a href="/login">
             <Button danger>Попробовать снова</Button>
           </a>
         </div>
