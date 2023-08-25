@@ -43,7 +43,7 @@ const GalleryContainer = () => {
 
   return (
     <div className={g.gallery_wrapper}>
-      <h1 className={g.title}>Галерея фотографий</h1>
+      <h1>Галерея фотографий</h1>
       <div>
         <div className={g.gallery_items}>
           {photos.map((item) => (
@@ -62,10 +62,10 @@ const GalleryContainer = () => {
       </div>
       <div className={g.links_button_wrapper}>
         <Link to={"/profile"}>
-          <Button className={g.link_button}>Перейти в профиль</Button>
+          <Button className={g.link_button}>В профиль</Button>
         </Link>
         <Link to={"/news"}>
-          <Button>Посмотреть новости</Button>
+          <Button>Новости</Button>
         </Link>
       </div>
     </div>

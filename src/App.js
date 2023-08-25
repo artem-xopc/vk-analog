@@ -25,10 +25,10 @@ function App() {
           isLoading,
         }}
       >
-        <ConfigProvider theme={{ algorithm: theme.darkAlgorithm }}>
+        {/* <ConfigProvider theme={{ algorithm: theme.darkAlgorithm }}> */}
           <NavBar />
           <AppRouter />
-        </ConfigProvider>
+        {/* </ConfigProvider> */}
       </AuthContext.Provider>
     </div>
   );

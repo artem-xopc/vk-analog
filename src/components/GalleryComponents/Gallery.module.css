@@ -3,25 +3,35 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin-bottom: 20px;
 }
 
 .title {
+    max-width: 400px;
     color: #000;
     text-align: center;
     margin-bottom: 10px;
     overflow-wrap: normal; 
 }
 
+.change_button {
+    margin-bottom: 10px;
+}
+
+.link_button {
+    margin-right: 10px;
+}
+
+
+/* Стили используются в компоненте: GalleryItem.jsx */
 .gallery_item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin: 20px;
-    max-width: 800px;
-    min-width: 600px;
+    margin: 10px;
+    max-width: 600px;
     background-color: #fff;
     border-radius: 25px;
 }
@@ -30,16 +40,5 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.change_button {
-    margin: 20px auto;
-}
-
-.links_button_wrapper {
-    margin: auto;
-}
-
-.link_button {
-    margin-right: 20px;
+    max-width: 400px;
 }

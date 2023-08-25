@@ -4,6 +4,8 @@ import { Button, List, Select } from "antd";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
+import n from "./News.module.css";
+
 const NewsContainer = () => {
   const [users, setUsers] = React.useState([]);
   const [posts, setPosts] = React.useState([]);
@@ -60,42 +62,56 @@ const NewsContainer = () => {
 
   const changePage = () => {
     setAuthorFilter(authorFilter + 1);
-    console.log(authorFilter)
+    console.log(authorFilter);
   };
 
   return (
-    <div>
-      <div>
-        <Select
-          style={{ marginBottom: "16px" }}
-          placeholder="Фильтр по автору"
-          onChange={handleAuthorFilterChange}
-          allowClear
-        >
-          {users.map((user) => (
-            <Select.Option key={user.id} value={user.id}>
-              {user.name}
-            </Select.Option>
-          ))}
-        </Select>
-        <List
-          itemLayout="vertical"
-          dataSource={posts}
-          renderItem={(post) => (
-            <List.Item key={post.id}>
-              <NewsItem title={post.title} body={post.body} />
-            </List.Item>
-          )}
-        />
-        <Button onClick={changePage}>Показать ещё</Button>
-        
+    <div className={n.news_wrapper}>
+      <h1 className={n.title}>Новости</h1>
+      <div className={n.box}>
+        <div className={n.select}>
+          <Select
+            style={{ marginBottom: "16px" }}
+            placeholder="Фильтр по автору"
+            onChange={handleAuthorFilterChange}
+            allowClear
+          >
+            {users.map((user) => (
+              <Select.Option key={user.id} value={user.id}>
+                {user.name}
+              </Select.Option>
+            ))}
+          </Select>
+        </div>
+        <div className={n.post_items}>
+          <List
+            itemLayout="vertical"
+            dataSource={posts}
+            renderItem={(post) => (
+              <div className={n.post_item}>
+                <List.Item key={post.id}>
+                  <NewsItem title={post.title} body={post.body} />
+                </List.Item>
+              </div>
+            )}
+          />
+        </div>
+        <div className={n.more_button}>
+          <Button onClick={changePage}>Показать ещё</Button>
+        </div>
       </div>
-      <Link to={"/profile"}>
-        <Button>В профиль</Button>
-      </Link>
-      <Link to={"/gallery"}>
-        <Button>Посмотреть фото</Button>
-      </Link>
+      <div className={n.links_wrapper}>
+        <div className={n.link_item}>
+          <Link to={"/profile"}>
+            <Button>В профиль</Button>
+          </Link>
+        </div>
+        <div className={n.link_item}>
+          <Link to={"/gallery"}>
+            <Button>В галерею</Button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };

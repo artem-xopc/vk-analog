@@ -6,7 +6,7 @@
 ### Почта и пароль для входа в систему:
 #### `candidate@test.com`, `Sj3jtod@!3`
 ### Ссылка на GitHub Pages с рабочим проектом:  
-#### `(VK_A)[]`
+#### [VK_A](https://artem-xopc.github.io/vk-analog/)
 
 ## 
 ### 

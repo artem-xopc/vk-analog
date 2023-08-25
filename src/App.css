@@ -35,7 +35,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #c1c1c1;
+  background-color: #edeef0;
   font-family: 'Centra', sans-serif;
 }
 
@@ -48,6 +48,10 @@ h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
+}
+
+h1 {
+  text-align: center;
 }
 
 p,

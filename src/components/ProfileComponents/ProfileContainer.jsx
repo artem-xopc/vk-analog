@@ -37,24 +37,35 @@ const ProfileContainer = () => {
 
   return (
     <div className={p.card_wrapper}>
-      <ProfileItem
-        name={user.name}
-        username={user.username}
-        website={user.website}
-      />
-      <Button onClick={() => setModalVisible(true)}>Редактировать</Button>
-      <UserModal
-        visible={modalVisible}
-        onSave={handleSaveProfile}
-        onCancel={() => setModalVisible(false)}
-      />
-      <div>
-        <Link to={"/news"}>
-          <Button>Новости</Button>
-        </Link>
-        <Link to={"/gallery"}>
-          <Button>Галерея</Button>
-        </Link>
+      <h1 className={p.title}>Ваш профиль</h1>
+      <div className={p.card}>
+        <div className={p.card_info}>
+          <ProfileItem
+            name={user.name}
+            username={user.username}
+            website={user.website}
+          />
+        </div>
+        <div className={p.edit}>
+          <Button onClick={() => setModalVisible(true)}>Редактировать</Button>
+        </div>
+        <UserModal
+          visible={modalVisible}
+          onSave={handleSaveProfile}
+          onCancel={() => setModalVisible(false)}
+        />
+        <div className={p.links_wrapper}>
+          <span className={p.link_button}>
+            <Link to={"/news"}>
+              <Button>Новости</Button>
+            </Link>
+          </span>
+          <span className={p.link_button}>
+            <Link to={"/gallery"}>
+              <Button>Галерея</Button>
+            </Link>
+          </span>
+        </div>
       </div>
     </div>
   );

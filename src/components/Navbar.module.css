@@ -1,6 +1,17 @@
+.header_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
 .links_wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+.log_button {
+    margin-left: 20px;
 }

@@ -1,0 +1,57 @@
+.login_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 10px 0;
+}
+
+.box {
+    max-width: 800px;
+    gap: 10px;
+}
+
+.login_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.login_button {
+    margin: 0 10px;
+}
+
+
+/* Стили используются в компоненте: LoginItem.jsx */
+.login_item {
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.input {
+    min-width: 400px;
+    margin-bottom: 10px;
+}
+
+.input:focus {
+    background-color: #fff;
+}
+
+.error {
+    color: #b80d0d;
+    margin-bottom: 10px;
+}

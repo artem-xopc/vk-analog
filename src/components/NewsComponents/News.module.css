@@ -1,0 +1,27 @@
+.news_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post_item {
+    background-color: #fff;
+    border-radius: 25px;
+    max-width: 800px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.links_wrapper {
+    display: flex;
+    gap: 10px;
+}
